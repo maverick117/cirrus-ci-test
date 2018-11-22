@@ -1,0 +1,13 @@
+container:
+        image: liuchong/rustup:latest
+        cpu: 1
+        memory: 1G
+
+test_task:
+        test_cargo_build_script:
+                cargo build
+        test_cargo_release_script:
+                cargo build --release
+        test_cargo_run_script:
+                cargo run 
+
